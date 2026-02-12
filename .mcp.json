@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "clickup": {
+      "command": "npx",
+      "args": ["-y", "@composible/composible-mcp-clickup"]
+    },
+    "context7": {
+      "command": "npx",
+      "args": ["-y", "@context7/mcp-server-context7"]
+    }
+  }
+}
