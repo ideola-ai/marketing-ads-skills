@@ -1,8 +1,13 @@
 ## requirements
 
-## how to 
+account manus
+
+## how to
+
 
 ## comparison
+
+skills vs prompt
 
 ## use case
 

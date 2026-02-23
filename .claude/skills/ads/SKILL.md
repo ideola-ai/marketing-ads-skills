@@ -1,11 +1,13 @@
 ---
 name: ads-audit
-description: Comprehensive ads audit system with platform-specific subcommands. Use /ads audit for full multi-platform audit. Platform-specific commands available - /ads google (Google Ads), /ads meta (Facebook/Instagram), /ads youtube (YouTube Ads), /ads linkedin (LinkedIn Ads), /ads tiktok (TikTok Ads), /ads microsoft (Microsoft/Bing Ads), /ads creative (creative audit), /ads landing (landing page audit), /ads budget (budget and bidding review), /ads plan for strategic planning, /ads competitor for competitive intelligence. Also triggers on audit ads, ad review, performance audit, analyze my ads, why are my ads underperforming.
+description: Comprehensive ads audit system with platform-specific subcommands. Use /ads audit for full multi-platform audit. Platform-specific commands available - /ads google (Google Ads), /ads meta (Facebook/Instagram), /ads youtube (YouTube Ads), /ads linkedin (LinkedIn Ads), /ads tiktok (TikTok Ads), /ads microsoft (Microsoft/Bing Ads), /ads creative (creative audit), /ads landing (landing page audit), /ads budget (budget and bidding review). Also triggers on audit ads, ad review, performance audit, analyze my ads, why are my ads underperforming.
 ---
 
 # Ads Audit System
 
-Comprehensive ad campaign audit system with modular platform-specific analysis capabilities.
+**Purpose:** Audit and optimize existing ad campaigns across all major platforms.
+
+This skill focuses exclusively on **performance analysis and optimization recommendations** - not campaign planning or strategy (use `/marketing-campaign` for that).
 
 ## Marketing OS Workflow Position
 
@@ -40,8 +42,6 @@ brand-voice → content-brief → content-planning → content-creation
 | `/ads creative` | Cross-platform creative quality audit and fatigue detection |
 | `/ads landing` | Landing page quality assessment for ad campaigns |
 | `/ads budget` | Budget allocation and bidding strategy review |
-| `/ads plan <type>` | Strategic ad plan with industry templates |
-| `/ads competitor` | Competitor ad intelligence across all platforms |
 
 ## Universal Audit Workflow
 
@@ -216,24 +216,6 @@ Prioritized action plan with:
 - Cross-channel budget balance
 
 **Budget Framework:** [references/budget.md](references/budget.md)
-
-### `/ads plan <type>`
-
-**Strategic planning for:**
-- New campaign launches
-- Channel expansion strategies
-- Budget allocation models
-- Testing roadmaps
-**Templates:** [references/templates/](references/templates/)
-
-### `/ads competitor`
-
-**Competitive intelligence:**
-- Ad library analysis
-- Creative pattern analysis
-- Offer/messaging comparison
-- Share of voice estimation
-- Opportunity identification
 
 ## Resources
 
