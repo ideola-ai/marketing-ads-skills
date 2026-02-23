@@ -1,19 +1,17 @@
 ---
-name: ads-content-os
-description: Complete AI agent system for social media content marketing workflow. Use when user wants to create content briefs, plan content calendars, generate social media content assets, or plan ad campaigns. Includes 4 integrated skills: brief (research-backed strategy), content-plan (calendar + ClickUp tasks), content-create (ready-to-use content), and campaign (paid media strategy).
+name: marketing-os
+description: Complete AI agent system for social media content marketing workflow. Use when user wants to create content briefs, plan content calendars, generate social media content assets, plan ad campaigns, or audit existing ad performance. Includes 5 integrated skills: brief (research-backed strategy), content-plan (calendar + ClickUp tasks), content-create (ready-to-use content), campaign (paid media strategy), and ads-audit (comprehensive ads audit).
 version: 1.0.0
-author: ideola
-tags: [social-media, marketing, content-creation, ads, workflow]
-repository: https://github.com/wahyudesu/ideola-ai-stack-3
+tags: [social-media, marketing, content-creation, ads, workflow, audit]
 ---
 
-# Ads Content OS - AI Agent System
+# Marketing OS - AI Agent System
 
-Complete integrated AI agent system for content marketing workflow - from research brief, content planning, asset creation, to campaign planning.
+Complete integrated AI agent system for content marketing workflow - from research brief, content planning, asset creation, campaign planning, to performance auditing.
 
 ## Overview
 
-Ads Content OS is a collection of 4 specialized AI skills that work independently but connect through outputs that become inputs for other agents. This creates a seamless workflow from strategy to execution.
+Marketing OS is a collection of 5 specialized AI skills that work independently but connect through outputs that become inputs for other agents. This creates a seamless workflow from strategy to execution to optimization.
 
 ## Workflow
 
@@ -21,6 +19,8 @@ Ads Content OS is a collection of 4 specialized AI skills that work independentl
 brief → content-plan → content-create
                     ↓
                   campaign
+                    ↓
+                 ads-audit
 ```
 
 ## Included Skills
@@ -90,6 +90,35 @@ Designs comprehensive ad campaigns with strategy, angles, and creative briefs.
 - Testing framework
 - Measurement plan
 
+### 5. `/ads-audit` - Ads Campaign Audit
+
+Comprehensive ad campaign audit with platform-specific analysis and optimization recommendations.
+
+**Commands:**
+- `/ads audit` - Full multi-platform audit
+- `/ads google` - Google Ads analysis
+- `/ads meta` - Meta Ads analysis
+- `/ads youtube` - YouTube Ads analysis
+- `/ads linkedin` - LinkedIn Ads analysis
+- `/ads tiktok` - TikTok Ads analysis
+- `/ads microsoft` - Microsoft/Bing Ads analysis
+- `/ads creative` - Creative quality audit
+- `/ads landing` - Landing page audit
+- `/ads budget` - Budget & bidding review
+
+**Use when:**
+- Auditing existing ad campaigns
+- Analyzing ad performance
+- Identifying optimization opportunities
+- "audit ads", "ad review", "performance audit"
+
+**Output:**
+- Performance analysis vs. benchmarks
+- Issue identification (creative, targeting, budget)
+- Optimization recommendations
+- A/B test ideas
+- Prioritized action plan
+
 ## Complete Workflow Example
 
 ```bash
@@ -104,6 +133,12 @@ Designs comprehensive ad campaigns with strategy, angles, and creative briefs.
 
 # Step 4: (Optional) Create campaign strategy
 /campaign
+
+# Step 5: Audit and optimize existing campaigns
+/ads audit
+
+# Step 6: (Optional) Platform-specific audit
+/ads google | /ads meta | /ads youtube | etc.
 ```
 
 ## Installation
@@ -112,10 +147,10 @@ To use these skills in your project:
 
 ```bash
 # Clone the repository
-git clone https://github.com/wahyudesu/ideola-ai-stack-3.git
+git clone https://github.com/wahyudesu/marketing-os.git
 
 # Copy skills to your project
-cp -r ideola-ai-stack-3/.claude/skills/* your-project/.claude/skills/
+cp -r marketing-os/.claude/skills/* your-project/.claude/skills/
 ```
 
 ## Skill Structure
@@ -137,14 +172,33 @@ cp -r ideola-ai-stack-3/.claude/skills/* your-project/.claude/skills/
 │           ├── tiktok.md     # TikTok-specific guidelines
 │           ├── linkedin.md   # LinkedIn-specific guidelines
 │           └── twitter.md    # Twitter/X-specific guidelines
-└── campaign/                 # /campaign - Ad campaign planning
+├── campaign/                 # /campaign - Ad campaign planning
+│   ├── SKILL.md
+│   └── rules/
+│       ├── architecture.md   # Campaign structure frameworks
+│       ├── audience.md       # Targeting strategies
+│       ├── creative.md       # Ad creative frameworks
+│       ├── testing.md        # A/B testing strategies
+│       └── measurement.md    # KPI and analytics setup
+└── ads-audit/               # /ads-audit - Comprehensive ads audit
     ├── SKILL.md
-    └── rules/
-        ├── architecture.md   # Campaign structure frameworks
-        ├── audience.md       # Targeting strategies
-        ├── creative.md       # Ad creative frameworks
-        ├── testing.md        # A/B testing strategies
-        └── measurement.md    # KPI and analytics setup
+    ├── rules/               # Workflow & diagnosis procedures (low freedom)
+    │   ├── workflow.md    # Step-by-step audit process
+    │   ├── diagnosis.md   # Root cause identification
+    │   └── priority.md    # Prioritization framework
+    └── references/          # Platform guides & data (high freedom)
+        ├── benchmarks.md    # Industry KPI benchmarks
+        ├── testing.md        # A/B testing frameworks
+        ├── checklist.md      # Complete audit checklist
+        ├── google.md        # Google Ads specific guide
+        ├── meta.md          # Meta Ads specific guide
+        ├── youtube.md        # YouTube Ads specific guide
+        ├── linkedin.md      # LinkedIn Ads specific guide
+        ├── tiktok.md        # TikTok Ads specific guide
+        ├── microsoft.md      # Microsoft Ads specific guide
+        ├── creative.md       # Creative audit framework
+        ├── landing.md       # Landing page audit framework
+        └── budget.md        # Budget & bidding framework
 ```
 
 ## Best Practices

@@ -1,8 +1,10 @@
-# Ads Content OS - Agent Architecture
+# Marketing OS - Agent Architecture
 
 ## Overview
 
-Sistem AI agent terintegrasi untuk content marketing workflow - dari research brief, content planning, asset creation, sampai campaign planning. Setiap agent independen tapi saling terhubung melalui output yang menjadi input bagi agent lain.
+Sistem AI agent terintegrasi untuk marketing workflow - dari research brief, content planning, asset creation, sampai campaign planning. Setiap agent independen tapi saling terhubung melalui output yang menjadi input bagi agent lain.
+
+Open-source system yang dapat digunakan oleh agency, marketing team, atau content creator mana pun.
 
 ## Workflow
 

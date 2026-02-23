@@ -1,18 +1,16 @@
-<img width="1280" height="640" alt="Design OS" src="https://github.com/user-attachments/assets/a9c04258-7b9a-45b6-8475-3431cdf5dbe9" />
+# Marketing OS
 
-# Ads Content OS
-
-**An AI-powered planning and production system for content creators.** Streamline your content strategy—from brief to scheduling to production—without starting from scratch every time.
+**An AI-powered planning and production system for marketing teams and agencies.** Streamline your content strategy—from brief to scheduling to production—without starting from scratch every time.
 
 ---
 
-## Why Ads Content OS?
+## Why Marketing OS?
 
 AI generates content fast, but the output often feels **generic** and off-target. Weak hooks. Off tone. Unclear CTAs. You spend as much time revising as creating from scratch.
 
 **Core problem**: We ask AI to handle strategy AND production in one step. No brief. No message architecture. No shared understanding of the end goal.
 
-**Solution**: Ads Content OS guides you through a structured creative process. You + AI working together through clear steps:
+**Solution**: Marketing OS guides you through a structured creative process. You + AI working together through clear steps:
 
 ---
 
@@ -42,58 +40,29 @@ Each step is a focused conversation. AI asks, you direct—together producing co
 
 ## Installation
 
-### Option 1: CLI Install (Recommended)
+### Option 1: Clone and Copy
 
-Use [npx skills](https://github.com/vercel-labs/skills) to install skills directly:
-
-```bash
-# Install all skills
-npx skills add coreyhaines31/marketingskills
-
-# Install specific skills
-npx skills add coreyhaines31/marketingskills --skill page-cro copywriting
-
-# List available skills
-npx skills add coreyhaines31/marketingskills --list
-```
-
-This automatically installs to your `.claude/skills/` directory.
-
-### Option 2: Claude Code Plugin
-
-Install via Claude Code's built-in plugin system:
+Clone the repo and copy the skills folder:
 
 ```bash
-# Add the marketplace
-/plugin marketplace add coreyhaines31/marketingskills
-
-# Install all marketing skills
-/plugin install marketing-skills
+git clone https://github.com/wahyudesu/marketing-os.git
+cp -r marketing-os/.claude/skills/* your-project/.claude/skills/
 ```
 
-### Option 3: Clone and Copy
-
-Clone the entire repo and copy the skills folder:
-
-```bash
-git clone https://github.com/coreyhaines31/marketingskills.git
-cp -r marketingskills/skills/* .claude/skills/
-```
-
-### Option 4: Git Submodule
+### Option 2: Git Submodule
 
 Add as a submodule for easy updates:
 
 ```bash
-git submodule add https://github.com/coreyhaines31/marketingskills.git .claude/marketingskills
+git submodule add https://github.com/wahyudesu/marketing-os.git .claude/marketing-os
 ```
 
-Then reference skills from `.claude/marketingskills/skills/`.
+Then reference skills from `.claude/marketing-os/skills/`.
 
-### Option 5: Fork and Customize
+### Option 3: Fork and Customize
 
 1. Fork this repository
-2. Customize skills for your specific needs
+2. Customize skills for your agency's needs
 3. Clone your fork into your projects
 
 ## How to Use
@@ -120,15 +89,9 @@ Then reference skills from `.claude/marketingskills/skills/`.
 
 ---
 
-## Full Documentation
-
-Complete docs, installation, and best practices 👉 [buildermethods.com/design-os](https://buildermethods.com/design-os)
-
----
-
 ## Created by
 
-**Wahyu Ikbal** — Adapted for content creation workflows
+**Wahyu Ikbal** — AI-powered marketing workflow system
 
 Based on [Design OS](https://buildermethods.com) by Brian Casel
 
@@ -137,4 +100,5 @@ Based on [Design OS](https://buildermethods.com) by Brian Casel
 ## Support & Updates
 
 - Check [CHANGELOG.md](CHANGELOG.md) for latest updates
-- Subscribe for new releases: [buildermethods.com/design-os](https://buildermethods.com/design-os)
+- Star the repo to show support
+- Open issues for bugs or feature requests

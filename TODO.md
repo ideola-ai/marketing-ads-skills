@@ -1,8 +1,8 @@
-# Ads Content OS - Roadmap
+# Marketing OS - Roadmap
 
 ## Project Overview
 
-AI agent suite untuk content marketing workflow. Open source project yang menyediakan 4 skills independen untuk Claude Code.
+AI agent suite untuk marketing workflow. Open-source system untuk agency, marketing team, dan content creator. Menyediakan 4+ skills independen untuk Claude Code yang dapat digunakan dan dikustomisasi sesuai kebutuhan.
 
 ---
 
@@ -140,10 +140,10 @@ AI agent suite untuk content marketing workflow. Open source project yang menyed
 ## Folder Structure (Current)
 
 ```
-ideola-ai-stack-3/
+marketing-os/
 ├── README.md
 ├── AGENTS.md              # Agent architecture documentation
-├── SKILLS-PLAN.md         # Original skills plan
+├── SKILL.md               # Main skill configuration
 ├── TODO.md                # This file
 ├── LICENSE
 ├── CONTRIBUTING.md
@@ -210,6 +210,21 @@ All 4 core skills are now complete with comprehensive rules:
 2. **content-plan** - Content calendar + ClickUp tasks
 3. **content-create** - Content asset creation (7 rule files)
 4. **campaign** - Ad campaign planning (5 rule files)
+5. **ads** - Ads audit system (2026 research integrated) ✅ NEW
+
+**Phase 1.5: Ads Audit System ✅ COMPLETE (Feb 2026)**
+
+Integrated comprehensive paid advertising research into the `ads` skill:
+
+| File | Updated With | Status |
+|------|--------------|--------|
+| `references/google.md` | AI Max, PMax maturity, Demand Gen, Enhanced Conversions, 2026 benchmarks | ✅ |
+| `references/meta.md` | Andromeda algorithm, EMQ scoring, 3-stage structure, Advantage+ updates | ✅ |
+| `references/benchmarks.md` | WordStream 2025 data, industry-specific metrics, MER targets | ✅ |
+| `references/creative.md` | Universal safe zones, 2026 asset specs, character limits, platform requirements | ✅ |
+| `references/budget.md` | Smart bidding requirements, 20% scaling rule, 3x kill rule, CBO vs ABO | ✅ |
+
+Original research archived to `/research-archive/` with integration mapping.
 
 **Next Steps:**
 - Phase 2: Internal testing
