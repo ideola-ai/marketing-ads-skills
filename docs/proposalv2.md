@@ -1,3 +1,28 @@
+
+https://manus.im/help/credits
+https://rube.app/credits
+
+## Feature
+google ads mcp -> composio, rube, manus 
+meta ads mcp* -> compeosio, rube, manus
+clickup mcp -> composio, rube, manus
+
+## comparison
+
+skills vs prompt
+
+```
+my-skill/
+├── SKILL.md          # Required: instructions + metadata
+├── scripts/          # Optional: executable code
+├── references/       # Optional: Additional documentation loaded on demand
+└── assets/           # Optional: Static resources like templates, images, or data files
+```
+
+## use case
+
+## note
+
 ## Objective:
 
 1. AI untuk bikin content brief content 
