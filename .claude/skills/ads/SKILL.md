@@ -7,6 +7,25 @@ description: Comprehensive ads audit system with platform-specific subcommands. 
 
 Comprehensive ad campaign audit system with modular platform-specific analysis capabilities.
 
+## Marketing OS Workflow Position
+
+```
+brand-voice → content-brief → content-planning → content-creation
+                                          ↓
+                                        marketing-campaign
+                                          ↓
+                                          ads-audit
+```
+
+**This skill is LAST** - Audit and optimize existing campaigns after they've been planned and launched.
+
+**Input from:**
+- `/marketing-campaign` - Campaign structure, KPIs, and benchmarks to compare against
+- `/content-creation` - Creative quality reference for ad audit
+
+**Output for:**
+- Optimization recommendations (loop back to campaign planning or content creation)
+
 ## Command Reference
 
 | Command | Description |
@@ -230,3 +249,23 @@ Prioritized action plan with:
 - [references/creative.md](references/creative.md) - Creative audit framework
 - [references/landing.md](references/landing.md) - Landing page audit framework
 - [references/budget.md](references/budget.md) - Budget & bidding framework
+
+---
+
+## Integration with Marketing OS Workflow
+
+**Input from:**
+- `/marketing-campaign` - Campaign structure, KPIs, and benchmarks to compare against
+- `/content-creation` - Creative quality reference for ad audit
+
+**Output for:**
+- Optimization recommendations (loop back to campaign planning or content creation)
+- Performance insights that inform future briefs
+
+**When to Use:**
+- After campaigns have been running for 1-2 weeks
+- When performance is below expectations
+- As part of ongoing optimization (weekly/bi-weekly)
+- Before scaling budget
+
+**Note:** This skill can be used independently - you don't need to go through the full workflow to audit ads. Just provide campaign data and metrics.

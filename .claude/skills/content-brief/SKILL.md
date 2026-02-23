@@ -1,5 +1,5 @@
 ---
-name: brief
+name: content-brief
 description: Create comprehensive social media content brief with research-backed strategy. Use when user asks to create content brief, social media strategy document, or needs research foundation for content planning. Triggers on - "buat brief", "brief social media", "content strategy", "research konten", "/brief" command, or any request for strategic content planning with audience analysis, platform guidelines, and content angles.
 version: 1.0.0
 ---
@@ -9,6 +9,25 @@ version: 1.0.0
 ## Overview
 
 This skill creates comprehensive social media content briefs with research-backed strategy. It transforms brand/product information into actionable audience insights, platform guidelines, content angles, and visual direction.
+
+## Marketing OS Workflow Position
+
+```
+brand-voice → content-brief → content-planning → content-creation
+                                          ↓
+                                        marketing-campaign
+                                          ↓
+                                          ads-audit
+```
+
+**This skill is SECOND** - Create brief after defining brand voice, before planning content or campaigns.
+
+**Input from:**
+- `/brand-voice` - Brand attributes, tone guidelines, messaging pillars
+
+**Output to:**
+- `/content-planning` - Audience, angles, platforms become inputs for calendar
+- `/campaign` - Audience and angles inform paid media strategy
 
 ## Workflow
 
@@ -220,12 +239,17 @@ Combine all sections into a comprehensive brief document.
 - Two-way conversation emphasis
 - Authentic, behind-the-scenes content
 
-## Integration with Other Skills
+## Integration with Marketing OS Workflow
+
+**Input from:**
+- `/brand-voice` - Brand attributes, tone guidelines, messaging pillars (if already defined)
 
 **Output to:**
-- `/content-plan` - Audience, angles, platforms, and visual direction become inputs
+- `/content-planning` - Audience, angles, platforms, and visual direction become inputs
 - `/campaign` - Audience and angles inform paid media strategy
-- `/content-create` - Visual direction and key messages guide asset creation
+- `/content-creation` - Visual direction and key messages guide asset creation
+
+## Quick Start Example
 
 ## Quick Start Example
 

@@ -1,11 +1,23 @@
 ---
 name: brand-voice
-description: Apply and enforce brand voice, style guide, and messaging pillars across content. Use when reviewing content for brand consistency, documenting a brand voice, adapting tone for different audiences, or checking terminology and style guide compliance.
+description: Define brand voice, style guide, and messaging pillars that serve as foundation for all marketing content. Use when user asks to define brand voice, create style guide, document brand personality, or establish brand guidelines. This is the first step in the Marketing OS workflow.
 ---
 
 # Brand Voice Skill
 
-Frameworks for documenting, applying, and enforcing brand voice and style guidelines across marketing content.
+Frameworks for documenting, applying, and enforcing brand voice and style guidelines across marketing content. This skill is typically the starting point for any new brand or campaign.
+
+## Marketing OS Workflow Position
+
+```
+brand-voice → content-brief → content-planning → content-creation
+                                          ↓
+                                        marketing-campaign
+                                          ↓
+                                          ads-audit
+```
+
+**This skill is FIRST** - Define brand voice before creating briefs, content, or campaigns.
 
 ## Brand Voice Documentation Framework
 
@@ -182,3 +194,39 @@ Maintain a list of preferred terms and their incorrect alternatives:
 - How to refer to competitors (by name or generically)
 - Terms competitors have coined that you should avoid (to prevent reinforcing their positioning)
 - Your preferred differentiation language
+
+---
+
+## Integration with Marketing OS Workflow
+
+**Output to:**
+- `/content-brief` - Brand voice, style rules, and messaging pillars inform brief creation
+- `/content-planning` - Tone and style guide content scheduling
+- `/content-creation` - Voice attributes guide copywriting
+- `/campaign` - Messaging strategy informs ad creative
+
+**When to Use:**
+- New brand setup (one-time)
+- Rebranding exercises
+- Before creating content for a new client
+- When content feels inconsistent
+- When onboarding new team members
+
+**Quick Start Example:**
+
+```bash
+# User runs:
+/brand-voice
+
+# Agent asks:
+1. Describe your brand as if it were a person
+2. What are 3-5 key attributes of your communication style?
+3. Who is your primary audience?
+4. What are your core messaging pillars?
+
+# Agent produces:
+- Complete brand voice documentation
+- Style guide for grammar and formatting
+- Terminology guidelines
+- Tone adaptations per channel
+```

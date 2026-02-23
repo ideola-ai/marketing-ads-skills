@@ -1,5 +1,5 @@
 ---
-name: campaign
+name: marketing-campaign
 description: Plan comprehensive ad campaigns with strategy, audience segmentation, creative angles, and measurement framework. Use when user asks to create ad campaign, paid media strategy, advertising plan, or campaign architecture. Triggers on - "campaign planning", "ads strategy", "iklan", "/campaign" command, or requests to plan paid advertising with targeting and creatives.
 ---
 
@@ -8,6 +8,25 @@ description: Plan comprehensive ad campaigns with strategy, audience segmentatio
 ## Overview
 
 This skill creates comprehensive paid advertising campaign strategies including audience segmentation, creative angles, testing frameworks, and measurement plans. It transforms brief outputs into actionable campaign architectures.
+
+## Marketing OS Workflow Position
+
+```
+brand-voice → content-brief → content-planning → content-creation
+                                          ↓
+                                        marketing-campaign
+                                          ↓
+                                          ads-audit
+```
+
+**This skill is FIFTH** - Plan campaigns after brief (can run parallel with content-planning), before auditing ads.
+
+**Input from:**
+- `/brand-voice` - Brand attributes and messaging consistency
+- `/content-brief` - Audience, angles, messaging, visual direction
+
+**Output for:**
+- `/ads-audit` - Campaign structure and KPIs become baseline for audit
 
 ## Workflow
 
@@ -130,15 +149,16 @@ See `rules/` folder for:
 - **Strategy:** Customer lists, loyalty messaging
 - **Budget split:** 100% existing customers
 
-## Integration with Other Skills
+## Integration with Marketing OS Workflow
 
 **Input from:**
-- `/brief` - Audience, angles, messaging, visual direction
+- `/brand-voice` - Brand attributes and messaging consistency
+- `/content-brief` - Audience, angles, messaging, visual direction
 
 **Output for:**
+- `/ads-audit` - Campaign structure and KPIs become baseline for audit
 - `/content-plan` - Organic content to complement paid
-- `/content-create` - Ad creative specifications
-- Media buyers or ad platform setup
+- `/content-creation` - Ad creative specifications
 
 ## Quick Start Example
 

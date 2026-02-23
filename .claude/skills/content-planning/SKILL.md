@@ -1,5 +1,5 @@
 ---
-name: content-plan
+name: content-planning
 description: Create content calendar and organize tasks in ClickUp for social media campaigns. Use when user asks to create content plan, content calendar, schedule posts, or organize content tasks. Triggers on - "content plan", "jadwal konten", "content calendar", "/content-plan" command, or requests to schedule/organize social media content with tasks.
 ---
 
@@ -8,6 +8,25 @@ description: Create content calendar and organize tasks in ClickUp for social me
 ## Overview
 
 This skill creates structured content calendars based on brief outputs and organizes tasks in ClickUp for execution. It transforms strategic briefs into actionable content schedules with clear deliverables.
+
+## Marketing OS Workflow Position
+
+```
+brand-voice → content-brief → content-planning → content-creation
+                                          ↓
+                                        marketing-campaign
+                                          ↓
+                                          ads-audit
+```
+
+**This skill is THIRD** - Plan content after creating brief, before creating assets.
+
+**Input from:**
+- `/brand-voice` - Tone and style guidelines
+- `/content-brief` - Audience, angles, platforms, visual direction
+
+**Output to:**
+- `/content-creation` - Content queue becomes input for asset creation
 
 ## Workflow
 
@@ -220,13 +239,14 @@ Compile final content plan:
 - Heavy on promotional and urgency angles
 - Coordinated messaging across all platforms
 
-## Integration with Other Skills
+## Integration with Marketing OS Workflow
 
 **Input from:**
-- `/brief` - Use audience, angles, platforms, and visual direction from brief
+- `/brand-voice` - Tone and style guidelines for content scheduling
+- `/content-brief` - Audience, angles, platforms, and visual direction
 
 **Output to:**
-- `/content-create` - Content queue becomes input for asset creation
+- `/content-creation` - Content queue becomes input for asset creation
 - `/campaign` - Calendar informs paid media scheduling
 
 ## Quick Start Example

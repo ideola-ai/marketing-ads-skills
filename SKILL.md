@@ -16,11 +16,11 @@ Marketing OS is a collection of 5 specialized AI skills that work independently 
 ## Workflow
 
 ```
-brief → content-plan → content-create
-                    ↓
-                  campaign
-                    ↓
-                 ads-audit
+brand voice → social-media-brief → content-plan → content-creation
+                                          ↓
+                                        campaign
+                                          ↓
+                                      ads-audit
 ```
 
 ## Included Skills

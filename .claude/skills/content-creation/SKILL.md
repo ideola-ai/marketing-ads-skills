@@ -1,5 +1,5 @@
 ---
-name: content-create
+name: content-creation
 description: Create social media content assets with ready-to-use copy and visual direction. Use when user asks to create content, write captions, make posts, or generate social media assets. Triggers on - "buat konten", "content create", "buat caption", "/content-create" command, or requests to create specific social media posts with copy and visuals.
 ---
 
@@ -8,6 +8,28 @@ description: Create social media content assets with ready-to-use copy and visua
 ## Overview
 
 This skill generates ready-to-publish social media content including copy, scripts, and visual direction. It transforms content queue items from content-plan into fully developed content assets.
+
+## Marketing OS Workflow Position
+
+```
+brand-voice → content-brief → content-planning → content-creation
+                                          ↓
+                                        marketing-campaign
+                                          ↓
+                                          ads-audit
+```
+
+**This skill is FOURTH** - Create content assets after planning, for immediate publishing or as reference for ad creatives.
+
+**Input from:**
+- `/brand-voice` - Voice attributes and tone guidelines
+- `/content-brief` - Visual direction, brand voice, key messages
+- `/content-planning` - Content queue with topics, pillars, CTAs
+
+**Output for:**
+- Direct use for posting
+- Brief for designers
+- `/ads-audit` - Creative quality reference
 
 ## Workflow
 
@@ -141,13 +163,17 @@ See `rules/visuals.md` for:
 - Posting recommendations
 ```
 
-## Integration with Other Skills
+## Integration with Marketing OS Workflow
 
 **Input from:**
-- `/brief` - Visual direction, brand voice, key messages
-- `/content-plan` - Content queue with topics, pillars, CTAs
+- `/brand-voice` - Voice attributes and tone guidelines
+- `/content-brief` - Visual direction, brand voice, key messages
+- `/content-planning` - Content queue with topics, pillars, CTAs
 
 **Output for:**
 - Direct use for posting
 - Brief for designers
 - Script for video production
+- `/ads-audit` - Creative quality reference when auditing ad creatives
+
+## Quick Start Example
